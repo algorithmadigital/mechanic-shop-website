@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Auto Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?auto-repair');
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .services {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Pro Auto Repair</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Expert Auto Repair Services</h1>
+            <p>Professional and reliable auto repair services you can trust</p>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Engine Repair</h3>
+                <p>Complete engine diagnostics and repair services</p>
+            </div>
+            <div class="service-card">
+                <h3>Brake Service</h3>
+                <p>Brake inspection, repair, and replacement</p>
+            </div>
+            <div class="service-card">
+                <h3>Oil Change</h3>
+                <p>Regular maintenance and oil change services</p>
+            </div>
+            <div class="service-card">
+                <h3>Transmission</h3>
+                <p>Transmission repair and maintenance</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="padding: 4rem 2rem; max-width: 1200px; margin: 0 auto;">
+        <h2>Contact Us</h2>
+        <p style="margin: 1rem 0;">
+            Phone: (555) 123-4567<br>
+            Email: info@proautorepair.com<br>
+            Address: 123 Main Street, Anytown, USA
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pro Auto Repair. All rights reserved.</p>
+    </footer>
+</body>
+</html>
